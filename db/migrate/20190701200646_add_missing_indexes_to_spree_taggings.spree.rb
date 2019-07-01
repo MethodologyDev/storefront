@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This migration comes from spree (originally 20160511072335)
 class AddMissingIndexesToSpreeTaggings < ActiveRecord::Migration[4.2]
   def change
@@ -10,6 +12,6 @@ class AddMissingIndexesToSpreeTaggings < ActiveRecord::Migration[4.2]
     add_index :spree_taggings, [:tagger_id, :tagger_type]
     add_index :spree_taggings,
               [:taggable_id, :taggable_type, :tagger_id, :context],
-              name: "spree_taggings_idy"
+              name: 'spree_taggings_idy'
   end
 end

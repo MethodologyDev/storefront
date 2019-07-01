@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This migration comes from spree (originally 20121031162139)
 class SplitPricesFromVariants < ActiveRecord::Migration[4.2]
   def up
@@ -19,7 +21,7 @@ class SplitPricesFromVariants < ActiveRecord::Migration[4.2]
   end
 
   def down
-    prices = ApplicationRecord.connection.execute("select variant_id, amount from spree_prices")
+    prices = ApplicationRecord.connection.execute('select variant_id, amount from spree_prices')
     add_column :spree_variants, :price, :decimal, after: :sku, scale: 2, precision: 8
 
     prices.each do |price|

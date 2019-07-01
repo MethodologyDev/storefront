@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Configure Spree Preferences
 #
 # Note: Initializing preferences available within the Admin will overwrite any changes that were made through the user interface when you restart.
@@ -27,4 +29,4 @@ Spree.dependencies do |dependencies|
 end
 
 
-Spree.user_class = "Spree::User"
+Spree.user_class = 'Spree::User'

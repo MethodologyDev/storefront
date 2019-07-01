@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This migration comes from spree_api (originally 20180320110726)
 class CreateDoorkeeperTables < ActiveRecord::Migration[5.1]
   def change
@@ -55,7 +57,7 @@ class CreateDoorkeeperTables < ActiveRecord::Migration[5.1]
       # previous tokens are revoked as soon as a new access token is created.
       # Comment out this line if you'd rather have refresh tokens
       # instantly revoked.
-      t.string   :previous_refresh_token, null: false, default: ""
+      t.string   :previous_refresh_token, null: false, default: ''
     end
 
     add_index :spree_oauth_access_tokens, :token, unique: true

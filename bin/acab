@@ -1,0 +1,2 @@
+#!/bin/sh
+rubocop -a --config .rubocop-acab.yml
