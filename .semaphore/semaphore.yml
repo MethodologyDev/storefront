@@ -1,0 +1,38 @@
+# For more Ruby information and examples, see
+# https://docs.semaphoreci.com/article/73-ruby
+version: v1.0
+name: Methodology Storefront CI
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: "Setup"
+    task:
+      secrets:
+        - name: methodology-storefront-app-secrets
+
+      jobs:
+        - name: "Cache main app bundle"
+          commands:
+            - checkout
+            - cache restore bundle-$(checksum Gemfile.lock)
+            - bundle install --deployment --path vendor/bundle
+            - cache store bundle-$(checksum Gemfile.lock) vendor/bundle
+
+  - name: "Rubocop"
+    task:
+      prologue:
+        commands:
+          - checkout
+          - gem install --no-rdoc --no-ri rubocop
+          - ( cd $HOME; cache restore rubocop_cache-$SEMAPHORE_GIT_BRANCH )
+
+      jobs:
+        - name: "Style check"
+          commands:
+            - rubocop --format simple --config .rubocop-ci.yml
+
+      epilogue:
+        commands:
+          - ( cd $HOME; cache delete rubocop_cache-$SEMAPHORE_GIT_BRANCH; cache store rubocop_cache-$SEMAPHORE_GIT_BRANCH .cache/rubocop_cache )
