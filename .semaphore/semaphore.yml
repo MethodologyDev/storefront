@@ -9,9 +9,6 @@ agent:
 blocks:
   - name: "Setup"
     task:
-      secrets:
-        - name: methodology-storefront-app-secrets
-
       jobs:
         - name: "Cache main app bundle"
           commands:
