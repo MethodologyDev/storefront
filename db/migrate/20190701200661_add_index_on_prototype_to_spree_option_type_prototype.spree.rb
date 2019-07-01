@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This migration comes from spree (originally 20170329113917)
 class AddIndexOnPrototypeToSpreeOptionTypePrototype < ActiveRecord::Migration[5.0]
   def change

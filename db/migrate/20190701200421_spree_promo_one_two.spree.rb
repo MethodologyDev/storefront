@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This migration comes from spree (originally 20120831092359)
 class SpreePromoOneTwo < ActiveRecord::Migration[4.2]
   def up

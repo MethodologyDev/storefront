@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This migration comes from spree (originally 20170331111757)
 class AddIndexesToReimbursementCredits < ActiveRecord::Migration[5.0]
   def change

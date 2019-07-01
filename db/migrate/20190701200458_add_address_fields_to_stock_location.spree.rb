@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This migration comes from spree (originally 20130306181701)
 class AddAddressFieldsToStockLocation < ActiveRecord::Migration[4.2]
   def change

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This migration comes from spree (originally 20160511071954)
 class ActsAsTaggableOnSpreeMigration < ActiveRecord::Migration[4.2]
   def self.up
@@ -31,7 +33,7 @@ class ActsAsTaggableOnSpreeMigration < ActiveRecord::Migration[4.2]
                 :tagger_id,
                 :tagger_type
               ],
-              unique: true, name: "spree_taggings_idx"
+              unique: true, name: 'spree_taggings_idx'
   end
 
   def self.down

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This migration comes from spree (originally 20170413211707)
 class ChangeIndexesOnFriendlyIdSlugs < ActiveRecord::Migration[5.0]
   def change

@@ -1,1 +1,3 @@
-Devise.secret_key = "d19f700ba25dc1a1f3a4909692406a99e6b4661ef6d3211452f4d6a3d4ba9e5efd3a6841c719429be5a2f12f86c222033acc"
+# frozen_string_literal: true
+
+Devise.secret_key = 'd19f700ba25dc1a1f3a4909692406a99e6b4661ef6d3211452f4d6a3d4ba9e5efd3a6841c719429be5a2f12f86c222033acc'

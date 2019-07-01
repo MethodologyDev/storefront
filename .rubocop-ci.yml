@@ -1,0 +1,10 @@
+inherit_from:
+  - .rubocop.yml
+
+AllCops:
+  DisabledByDefault: true
+  UseCache: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  Severity: error
