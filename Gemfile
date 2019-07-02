@@ -39,6 +39,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'aws-sdk-s3', '~> 1.43.0', require: false
+gem 'methodology_toolkit', github: 'MethodologyDev/methodology_toolkit', branch: 'master'
 gem 'spree', '~> 3.7.0'
 gem 'spree_auth_devise', '~> 3.5'
 gem 'spree_gateway', '~> 3.4'
@@ -47,7 +48,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'dotenv-rails', '~> 2.5.0'
-  gem 'rubocop', '~> 0.72.0', require: false
 end
 
 group :development do
