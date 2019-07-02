@@ -39,7 +39,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'aws-sdk-s3', '~> 1.43.0', require: false
-gem 'methodology_toolkit', github: 'MethodologyDev/methodology_toolkit', tag: 'v0.1.0'
+gem 'methodology_toolkit', git: 'https://github.com/MethodologyDev/methodology_toolkit', tag: 'v0.1.0'
 gem 'spree', '~> 3.7.0'
 gem 'spree_auth_devise', '~> 3.5'
 gem 'spree_gateway', '~> 3.4'
