@@ -1,0 +1,8 @@
+AllCops:
+  Exclude:
+    - '**/db/schema.rb'
+    - '**/Gemfile.lock'
+    - '**/tmp/**/*'
+    - 'script/**/*'
+    - '**/bin/{rails,rake,yarn}'
+    - '**/{Guardfile,Rakefile}'

@@ -28,7 +28,7 @@ blocks:
       jobs:
         - name: "Style check"
           commands:
-            - rubocop --format simple --config .rubocop-ci.yml
+            - rubocop -c .rubocop-ci.yml
 
       epilogue:
         commands:

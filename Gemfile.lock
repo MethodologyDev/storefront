@@ -1,11 +1,10 @@
 GIT
   remote: https://github.com/MethodologyDev/methodology_toolkit.git
-  revision: 28c42ed79390a306131ad9ea4180a1a4d0f83b68
+  revision: 173ead5b3190bb2f1ec27d0bade617bb3c2f6089
   branch: master
   specs:
     methodology_toolkit (0.1.0)
       rails (~> 5.2.3)
-      rubocop (~> 0.72.0)
       sidekiq (~> 5.2.7)
       sidekiq-status (~> 1.1.3)
       sidekiq-unique-jobs (~> 4.0.18)
@@ -481,6 +480,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.3)
   rspec-rails (~> 3.8.2)
+  rubocop (~> 0.72.0)
   sass-rails (~> 5.0)
   selenium-webdriver
   spree (~> 3.7.0)
