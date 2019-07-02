@@ -1,13 +1,10 @@
 GIT
   remote: https://github.com/MethodologyDev/methodology_toolkit.git
-  revision: 173ead5b3190bb2f1ec27d0bade617bb3c2f6089
-  branch: master
+  revision: 6eb9111104ffff17d5641887d12a9564a7606577
+  tag: v0.1.0
   specs:
     methodology_toolkit (0.1.0)
       rails (~> 5.2.3)
-      sidekiq (~> 5.2.7)
-      sidekiq-status (~> 1.1.3)
-      sidekiq-unique-jobs (~> 4.0.18)
 
 GEM
   remote: https://rubygems.org/
@@ -111,8 +108,6 @@ GEM
       activesupport (>= 3.0.0)
     childprocess (1.0.1)
       rake (< 13.0)
-    chronic_duration (0.10.6)
-      numerizer (~> 0.1.1)
     cldr-plurals-runtime-rb (1.0.1)
     climate_control (0.2.0)
     coffee-rails (4.2.2)
@@ -123,7 +118,6 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
-    connection_pool (2.2.2)
     crass (1.0.4)
     css_parser (1.7.0)
       addressable
@@ -211,7 +205,6 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
-    numerizer (0.1.1)
     orm_adapter (0.5.0)
     paperclip (6.1.0)
       activemodel (>= 4.2.0)
@@ -238,8 +231,6 @@ GEM
     rabl (0.13.1)
       activesupport (>= 2.3.14)
     rack (2.0.7)
-    rack-protection (2.0.5)
-      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.3)
@@ -276,7 +267,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    redis (4.1.2)
     regexp_parser (1.5.1)
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
@@ -327,17 +317,6 @@ GEM
     selenium-webdriver (3.142.3)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
-    sidekiq (5.2.7)
-      connection_pool (~> 2.2, >= 2.2.2)
-      rack (>= 1.5.0)
-      rack-protection (>= 1.5.0)
-      redis (>= 3.3.5, < 5)
-    sidekiq-status (1.1.4)
-      chronic_duration
-      sidekiq (>= 3.0)
-    sidekiq-unique-jobs (4.0.18)
-      sidekiq (>= 2.6)
-      thor
     spree (3.7.3)
       spree_api (= 3.7.3)
       spree_backend (= 3.7.3)
