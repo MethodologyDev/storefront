@@ -18,12 +18,22 @@
 
   .nav a {
     color: black;
+    padding: 15px 5px 3px 5px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: 500;
+
+    &:hover, &:focus {
+      background: transparent;
+      border-bottom: 2px solid black;
+    }
   }
 
-  background: none;
+  background: transparent;
 
   #header {
-    background: none;
+    background: transparent;
   }
 
   #logo {

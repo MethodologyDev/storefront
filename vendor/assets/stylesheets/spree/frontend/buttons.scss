@@ -2,7 +2,7 @@
   border-radius: 0;
 
   &.btn-success {
-    &, &:active {
+    &, &:active, &:focus {
       background: #FECDD0;
       color: black;
       border: 1px solid #FECDD0;
@@ -14,7 +14,7 @@
   }
 
   &.btn-primary {
-    &, &:active {
+    &, &:active, &:focus {
       background: transparent;
       color: black;
       border-color: black;
