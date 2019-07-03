@@ -9,6 +9,9 @@ agent:
 blocks:
   - name: "Setup"
     task:
+      secrets:
+        - name: storefront-secrets
+
       jobs:
         - name: "Cache main app bundle"
           commands:
@@ -19,6 +22,9 @@ blocks:
 
   - name: "Rubocop"
     task:
+      secrets:
+        - name: storefront-secrets
+
       prologue:
         commands:
           - checkout
