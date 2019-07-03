@@ -10,6 +10,12 @@
   ],
   "env": {
     "APP_ENV": "review",
+    "ADMIN_EMAIL": {
+      "required": true
+    },
+    "ADMIN_PASSWORD": {
+      "required": true
+    },
     "AWS_ACCESS_KEY_ID": {
       "required": true
     },
@@ -17,6 +23,9 @@
       "required": true
     },
     "AWS_SECRET_ACCESS_KEY": {
+      "required": true
+    },
+    "BUNDLE_GEM__FURY__IO": {
       "required": true
     },
     "LANG": {
