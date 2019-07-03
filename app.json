@@ -10,6 +10,12 @@
   ],
   "env": {
     "APP_ENV": "review",
+    "ADMIN_EMAIL": {
+      "required": true
+    },
+    "ADMIN_PASSWORD": {
+      "required": true
+    },
     "AWS_ACCESS_KEY_ID": {
       "required": true
     },
