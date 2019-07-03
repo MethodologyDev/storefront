@@ -19,6 +19,9 @@
     "AWS_SECRET_ACCESS_KEY": {
       "required": true
     },
+    "BUNDLE_GEM__FURY__IO": {
+      "required": true
+    },
     "LANG": {
       "required": true
     },
