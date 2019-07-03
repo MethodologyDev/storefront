@@ -12,3 +12,23 @@
 * {
   font-family: Sailec;
 }
+
+#spree-header {
+  color: black;
+
+  .nav a {
+    color: black;
+  }
+
+  background: none;
+
+  #header {
+    background: none;
+  }
+
+  #logo {
+    img {
+      max-height: 2.5vmax;
+    }
+  }
+}
