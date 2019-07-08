@@ -1,0 +1,44 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require spree/frontend
+
+ *= require_self
+ *= require_tree .
+*/
+
+* {
+  font-family: Sailec;
+}
+
+#spree-header {
+  color: black;
+
+  .nav a {
+    color: black;
+    padding: 15px 5px 3px 5px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: 500;
+
+    &:hover, &:focus {
+      background: transparent;
+      border-bottom: 2px solid black;
+    }
+  }
+
+  background: transparent;
+
+  #header {
+    background: transparent;
+  }
+
+  #logo {
+    img {
+      max-height: 2.5vmax;
+    }
+  }
+}
